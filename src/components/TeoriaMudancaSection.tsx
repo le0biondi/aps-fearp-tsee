@@ -51,7 +51,7 @@ const TeoriaMudancaSection = () => {
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Para famílias de baixa renda, a tarifa plena da energia elétrica pode comprometer de forma excessiva a 
-                renda familiar, levando à <strong className="text-warning">"pobreza energética"</strong>, definida como a situação 
+                renda familiar, levando à <strong className="text-warning">pobreza energética</strong>, definida como a situação 
                 em que uma família compromete mais de 10% de sua renda com os custos de acesso à energia. Essa situação de pobreza 
                 energética tem responsabilidade direta na manutenção e possivelmente no aumento da desigualdade social, alimentando 
                 a escassez e a exclusão social.
