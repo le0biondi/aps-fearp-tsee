@@ -29,7 +29,7 @@ const AbrangenciaSection = () => {
               <p className="text-muted-foreground leading-relaxed">
                 A Tarifa Social de Energia Elétrica (TSEE) é um programa de abrangência nacional que, em sua implementação atual, 
                 mobiliza significativos recursos para garantir o acesso à energia elétrica para milhões de famílias de baixa renda. 
-                Em 2024, o programa movimentou R\$6,4 bilhões em abatimentos nas faturas, beneficiando 17,4 milhões de famílias em 
+                Em 2024, o programa movimentou R$6,4 bilhões em abatimentos nas faturas, beneficiando 17,4 milhões de famílias em 
                 todo o Brasil. Este alcance representou um acréscimo de 2% no número de famílias beneficiadas no decorrer do ano, 
                 adicionando mais 342 mil famílias de baixa renda ao universo de beneficiários.
               </p>
