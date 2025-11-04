@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="md:col-span-2">
               <div className="flex items-center gap-2 mb-4">
                 <BarChart3 className="w-6 h-6" />
-                <span className="text-xl font-bold">Políticas Públicas Analytics</span>
+                <span className="text-xl font-bold">Avaliação de Políticas Públicas</span>
               </div>
               <p className="text-primary-foreground/80 text-sm leading-relaxed">
                 Plataforma de análise e avaliação de impacto de políticas sociais no Brasil, 
