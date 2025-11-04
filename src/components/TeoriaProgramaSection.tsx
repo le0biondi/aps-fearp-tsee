@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { BookOpen, DollarSign, Users, Tag } from "lucide-react"; // Added 'Tag' for price discrimination
+import { BookOpen, DollarSign, Users, Tag } from "lucide-react";
 import cadeiaResultados from "@/assets/cadeia-resultados-tsee.png";
 
 const TeoriaProgramaSection = () => {
@@ -97,6 +97,10 @@ const TeoriaProgramaSection = () => {
                   className="w-full h-auto"
                 />
               </div>
+              {/* Novo parágrafo de detalhamento da cadeia de resultados */}
+              <p className="text-muted-foreground leading-relaxed mt-4">
+                A Cadeia de Resultados da TSEE inicia-se com **Insumos** como os dados do CadÚnico, recursos financeiros da CDE e leis garantidoras. Diversos **Agentes** atuam, incluindo o Ministério da Cidadania, ANEEL, Concessionárias Distribuidoras e o Congresso Nacional. As **Ações** abrangem a definição de critérios de elegibilidade, identificação e inclusão de beneficiários, recolhimento da CDE, regulação e fiscalização, e a aplicação de mecanismos de descontos. Como **Resultados** diretos, observamos descontos aplicados nas faturas e isenções de encargos, que levam à diminuição da despesa familiar com energia elétrica, permitindo a liberação de renda para outras necessidades e uma melhoria na qualidade de vida das famílias beneficiárias.
+              </p>
               <p className="text-xs text-muted-foreground mt-4">
                 Leonardo, Samuel e Cecília | Novembro 3, 2025
               </p>
