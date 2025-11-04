@@ -14,7 +14,7 @@ const Footer = () => {
               </div>
               <p className="text-primary-foreground/80 text-sm leading-relaxed">
                 Plataforma de análise e avaliação de impacto de políticas sociais no Brasil, 
-                utilizando metodologias econométricas rigorosas e visualizações interativas.
+                utilizando metodologias econométricas e visualizações interativas.
               </p>
             </div>
 
@@ -22,8 +22,8 @@ const Footer = () => {
             <div>
               <h3 className="font-semibold mb-4">Programas</h3>
               <ul className="space-y-2 text-sm text-primary-foreground/80">
-                <li><a href="#bolsa-familia" className="hover:text-primary-foreground transition-colors">Bolsa Família</a></li>
-                <li><a href="#luz-do-povo" className="hover:text-primary-foreground transition-colors">Luz do Povo</a></li>
+                <li><a href="#Tarfia  Social" className="hover:text-primary-foreground transition-colors">Bolsa Família</a></li>
+                <li><a href="#TSEE" className="hover:text-primary-foreground transition-colors">Luz do Povo</a></li>
                 <li><a href="#metodologia" className="hover:text-primary-foreground transition-colors">Metodologias</a></li>
               </ul>
             </div>
@@ -34,11 +34,11 @@ const Footer = () => {
               <ul className="space-y-2 text-sm text-primary-foreground/80">
                 <li className="flex items-center gap-2">
                   <Mail className="w-4 h-4" />
-                  <span>contato@ppanalytics.gov.br</span>
+                  <span>leonardo.biondi@usp.com.br</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <Github className="w-4 h-4" />
-                  <span>github.com/ppanalytics</span>
+                  <span>https://github.com/le0biondi/aps-fearp-tsee/</span>
                 </li>
               </ul>
             </div>
@@ -46,8 +46,8 @@ const Footer = () => {
 
           {/* Bottom Bar */}
           <div className="pt-8 border-t border-primary-foreground/20 text-center text-sm text-primary-foreground/60">
-            <p>© 2024 Políticas Públicas Analytics. Desenvolvido para avaliação econômica e social.</p>
-            <p className="mt-2">Dados: IBGE, MDS/SENARC, DataSUS • REC3310 2024 - Avaliação de Políticas Públicas</p>
+            <p>© 2025 Avaliação de Políticas Públicas. Desenvolvido para disciplina REC3310.</p>
+            <p className="mt-2">Dados: IBGE, PNADc, ANEEL </p>
           </div>
         </div>
       </div>
