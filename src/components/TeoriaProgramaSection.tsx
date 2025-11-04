@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { BookOpen, Target, DollarSign, Users } from "lucide-react";
+import { BookOpen, DollarSign, Users, Tag } from "lucide-react"; // Added 'Tag' for price discrimination
 import cadeiaResultados from "@/assets/cadeia-resultados-tsee.png";
 
 const TeoriaProgramaSection = () => {
@@ -21,102 +21,72 @@ const TeoriaProgramaSection = () => {
             </p>
           </div>
 
-          {/* Introduction */}
+          {/* Mecanismos e Lógica Operacional do Programa */}
           <Card className="mb-8">
             <CardHeader>
-              <CardTitle>Visão Geral da Política</CardTitle>
-            </CardHeader>
-            <CardContent className="prose prose-slate max-w-none dark:prose-invert">
-              <p className="text-muted-foreground leading-relaxed">
-                A Tarifa Social de Energia Elétrica (TSEE) é uma política pública estruturada para promover a inclusão e 
-                o bem-estar social por meio da determinação diferenciada de preços para um serviço essencial. Sua teoria e 
-                lógica são profundamente enraizadas na compreensão do papel que os preços públicos podem desempenhar na 
-                redistribuição de renda e na consecução de objetivos sociais.
+              <CardTitle className="text-2xl md:text-3xl font-bold">Mecanismos Operacionais e Lógica Interna</CardTitle>
+              <p className="text-muted-foreground mt-2">
+                A TSEE opera através de um conjunto de mecanismos desenhados para direcionar o benefício de forma eficaz.
               </p>
-            </CardContent>
-          </Card>
+            </CardHeader>
+            <CardContent className="space-y-6">
 
-          {/* Problem and Justification */}
-          <Card className="mb-8">
-            <CardHeader>
-              <div className="flex items-center gap-3">
-                <Target className="w-6 h-6 text-warning" />
-                <CardTitle>Problema Identificado e Justificativa da Intervenção</CardTitle>
+              {/* Discriminação de Preços */}
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 p-3 rounded-full bg-blue-100 dark:bg-blue-900">
+                  <Tag className="w-6 h-6 text-blue-600 dark:text-blue-300" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">1. Discriminação de Preços: Segmentação de Mercado para Objetivos Sociais</h3>
+                  <p className="text-muted-foreground leading-relaxed mb-3">
+                    O conceito central que embasa a TSEE é a discriminação de preços, prática de vender diferentes unidades do mesmo bem a preços diferentes. No contexto da TSEE, isso se manifesta de duas formas:
+                  </p>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-2 pl-4">
+                    <li>
+                      <strong className="text-foreground">Discriminação de Terceiro Grau:</strong> Baseia-se na capacidade de separar compradores em diferentes grupos conforme sua capacidade de pagar. A TSEE identifica grupos de domicílios com base em seu status socioeconômico (renda, participação em CadÚnico e BPC) para aplicar tarifas diferenciadas, utilizando o CadÚnico como sistema de identificação.
+                    </li>
+                    <li>
+                      <strong className="text-foreground">Discriminação de Segundo Grau:</strong> Caracteriza-se pela aplicação de descontos por blocos de unidades vendidas. A TSEE estabelece uma estrutura tarifária com descontos aplicados em faixas de consumo (0-30 kWh, 31-100 kWh, etc.), visando um subsídio cruzado ao consumo dos domicílios de baixa renda, sob o pressuposto de que há uma relação positiva entre a renda e o consumo desses serviços públicos.
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <p className="text-muted-foreground leading-relaxed">
-                A TSEE emerge como uma resposta a um problema social e econômico persistente: a desigualdade de renda e a 
-                incapacidade de uma parcela significativa da população em arcar com o custo total de serviços públicos 
-                essenciais, como a energia elétrica.
-              </p>
-              <p className="text-muted-foreground leading-relaxed">
-                O estudo de Andrade (1998) contextualiza a realidade brasileira, apontando que a desigualdade na distribuição 
-                de renda é um desafio histórico e que as políticas fiscais tradicionais (tributação) podem ser "bastante 
-                ineficazes quanto a suas metas, sendo, na verdade, regressivos em termos de renda" e, por si só, "podem não 
-                ser suficientes para aliviar os problemas distributivos".
-              </p>
-            </CardContent>
-          </Card>
 
-          {/* Objectives */}
-          <Card className="mb-8">
-            <CardHeader>
-              <div className="flex items-center gap-3">
-                <DollarSign className="w-6 h-6 text-success" />
-                <CardTitle>Objetivos da Política Pública</CardTitle>
+              {/* Financiamento e Sustentabilidade */}
+              <div className="flex items-start gap-4 mt-6">
+                <div className="flex-shrink-0 p-3 rounded-full bg-green-100 dark:bg-green-900">
+                  <DollarSign className="w-6 h-6 text-green-600 dark:text-green-300" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">2. Financiamento e Sustentabilidade</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    O benefício da TSEE é custeado pela Conta de Desenvolvimento Energético (CDE), um fundo do setor elétrico. Essa estrutura de financiamento cobre o déficit resultante da aplicação dos descontos, funcionando como um mecanismo de transferência de recursos.
+                  </p>
+                </div>
               </div>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <p className="text-muted-foreground leading-relaxed">
-                Nesse contexto, a TSEE se justifica pela perspectiva de utilizar os preços de bens e serviços fornecidos por 
-                empresas públicas (ou reguladas) como um instrumento distributivo complementar. A lógica é que o governo, ao 
-                possuir ou regular empresas de serviços públicos, pode intervir nos mercados de bens com uma "finalidade 
-                redistributiva para manter o preço dos bens de salário em nível baixo".
-              </p>
-              <p className="text-muted-foreground leading-relaxed">
-                A energia elétrica, sendo um bem de consumo indispensável e um fator de dignidade, é um alvo primordial para 
-                tal intervenção. A política busca maximizar o bem-estar social e alcançar metas distributivas por meio da 
-                diferenciação tarifária.
-              </p>
+
+              {/* Critérios de Elegibilidade e Aplicação do Benefício */}
+              <div className="flex items-start gap-4 mt-6">
+                <div className="flex-shrink-0 p-3 rounded-full bg-purple-100 dark:bg-purple-900">
+                  <Users className="w-6 h-6 text-purple-600 dark:text-purple-300" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">3. Critérios de Elegibilidade e Aplicação do Benefício</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    A TSEE define critérios claros de elegibilidade para direcionar os benefícios ao público-alvo, como a renda familiar mensal per capita, o recebimento de BPC, ou a necessidade de uso contínuo de aparelhos elétricos por questões de saúde. A introdução da inscrição automática visa maximizar o alcance do programa, superando barreiras como desconhecimento ou relutância.
+                  </p>
+                </div>
+              </div>
+
             </CardContent>
           </Card>
 
-          {/* Key Mechanisms */}
-          <div className="grid md:grid-cols-2 gap-6 mb-12">
-            <Card className="border-l-4 border-l-primary">
-              <CardHeader>
-                <Users className="w-8 h-8 text-primary mb-2" />
-                <CardTitle>Mecanismo de Redistribuição</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  Utilização de preços diferenciados como instrumento de política redistributiva, complementando as 
-                  ferramentas fiscais tradicionais e promovendo equidade no acesso a serviços essenciais.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-l-4 border-l-accent">
-              <CardHeader>
-                <Target className="w-8 h-8 text-accent mb-2" />
-                <CardTitle>Focalização Eficiente</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  Concessão automática baseada em critérios objetivos do Cadastro Único e BPC, garantindo que o benefício 
-                  alcance efetivamente as famílias em situação de vulnerabilidade energética.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Results Chain */}
+          {/* Results Chain Image */}
           <Card>
             <CardHeader>
-              <CardTitle>Cadeia de Resultados TSEE</CardTitle>
+              <CardTitle className="text-2xl md:text-3xl font-bold">Cadeia de Resultados da TSEE</CardTitle>
               <p className="text-sm text-muted-foreground mt-2">
-                Fluxo de processos e atores envolvidos na implementação da política pública
+                Visualização da sequência lógica do programa, desde os insumos até os impactos esperados.
               </p>
             </CardHeader>
             <CardContent>
