@@ -37,7 +37,7 @@ const TeoriaProgramaSection = () => {
                   <Tag className="w-6 h-6 text-blue-600 dark:text-blue-300" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">1. Discriminação de Preços: Segmentação de Mercado para Objetivos Sociais</h3>
+                  <h3 className="text-xl font-semibold mb-2">Discriminação de Preços: Segmentação de Mercado para Objetivos Sociais</h3>
                   <p className="text-muted-foreground leading-relaxed mb-3">
                     O conceito central que embasa a TSEE é a discriminação de preços, prática de vender diferentes unidades do mesmo bem a preços diferentes. No contexto da TSEE, isso se manifesta de duas formas:
                   </p>
@@ -58,7 +58,7 @@ const TeoriaProgramaSection = () => {
                   <DollarSign className="w-6 h-6 text-green-600 dark:text-green-300" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">2. Financiamento e Sustentabilidade</h3>
+                  <h3 className="text-xl font-semibold mb-2">Financiamento e Sustentabilidade</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     O benefício da TSEE é custeado pela Conta de Desenvolvimento Energético (CDE), um fundo do setor elétrico. Essa estrutura de financiamento cobre o déficit resultante da aplicação dos descontos, funcionando como um mecanismo de transferência de recursos.
                   </p>
@@ -71,7 +71,7 @@ const TeoriaProgramaSection = () => {
                   <Users className="w-6 h-6 text-purple-600 dark:text-purple-300" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">3. Critérios de Elegibilidade e Aplicação do Benefício</h3>
+                  <h3 className="text-xl font-semibold mb-2">Critérios de Elegibilidade e Aplicação do Benefício</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     A TSEE define critérios claros de elegibilidade para direcionar os benefícios ao público-alvo, como a renda familiar mensal per capita, o recebimento de BPC, ou a necessidade de uso contínuo de aparelhos elétricos por questões de saúde. A introdução da inscrição automática visa maximizar o alcance do programa, superando barreiras como desconhecimento ou relutância.
                   </p>
