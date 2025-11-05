@@ -53,19 +53,19 @@ const AbrangenciaSection = () => {
                 </p>
                 <ul className="list-disc list-inside text-muted-foreground space-y-2 pl-4">
                   <li>
-                    **Titularidade da Fatura Incompatível:** Nenhum integrante da família com CPF no CadÚnico é titular da fatura de energia (ex: imóvel alugado, fatura no nome do proprietário ou antigo morador).
+                    Titularidade da Fatura Incompatível: Nenhum integrante da família com CPF no CadÚnico é titular da fatura de energia (ex: imóvel alugado, fatura no nome do proprietário ou antigo morador).
                   </li>
                   <li>
-                    **CPF Incorreto:** O CPF do titular da fatura de energia está com informações incorretas no CadÚnico ou na distribuidora.
+                    CPF Incorreto: O CPF do titular da fatura de energia está com informações incorretas no CadÚnico ou na distribuidora.
                   </li>
                   <li>
-                    **Endereço Desatualizado:** A família possui o endereço desatualizado no CadÚnico.
+                    Endereço Desatualizado: A família possui o endereço desatualizado no CadÚnico.
                   </li>
                   <li>
-                    **Fornecimento Irregular:** A família utiliza fornecimento de energia elétrica de forma irregular no domicílio (ex: "gato").
+                    Fornecimento Irregular: A família utiliza fornecimento de energia elétrica de forma irregular no domicílio (ex: "gato").
                   </li>
                   <li>
-                    **Ausência de Energia:** A família não possui energia elétrica no domicílio, impedindo a aplicação do desconto.
+                    Ausência de Energia: A família não possui energia elétrica no domicílio, impedindo a aplicação do desconto.
                   </li>
                 </ul>
               </CardContent>
@@ -86,13 +86,13 @@ const AbrangenciaSection = () => {
                 </p>
                 <ul className="list-disc list-inside text-muted-foreground space-y-2 pl-4">
                   <li>
-                    Em 2024, a **ANEEL aprovou a Resolução Normativa nº 1.095/2024**, estabelecendo a padronização nacional do número de identificação da unidade consumidora.
+                    Em 2024, a ANEEL aprovou a Resolução Normativa nº 1.095/2024, estabelecendo a padronização nacional do número de identificação da unidade consumidora.
                   </li>
                   <li>
-                    Esta padronização tem como principal finalidade **facilitar a identificação** das famílias de baixa renda que ainda não são beneficiadas.
+                    Esta padronização tem como principal finalidade facilitar a identificação das famílias de baixa renda que ainda não são beneficiadas.
                   </li>
                   <li>
-                    O objetivo é **cadastrar essas famílias de forma automática** para o recebimento dos descontos da Tarifa Social, aumentando a abrangência e reduzindo a burocracia.
+                    O objetivo é cadastrar essas famílias de forma automática para o recebimento dos descontos da Tarifa Social, aumentando a abrangência e reduzindo a burocracia.
                   </li>
                 </ul>
               </CardContent>
