@@ -76,7 +76,7 @@ const MetodologiaAvaliacaoSection = () => {
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground leading-relaxed">
                   No <strong className="text-foreground">RDD Sharp</strong>, a relação entre a variável de atribuição (X) e o tratamento (D) é determinística: 
-                  todas as unidades com escore $\geq X_0$ recebem o tratamento, e todas com escore $< X_0$ não recebem. 
+                  todas as unidades com escore $&ge; X_0$ recebem o tratamento, e todas com escore $&lt; X_0$ não recebem. 
                   A participação é mandatória e o cumprimento é perfeito. A probabilidade de tratamento muda de 0 para 1 no ponto de corte.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
