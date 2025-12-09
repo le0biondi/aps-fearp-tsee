@@ -2,7 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Calculator, Zap, TrendingUp, Database } from "lucide-react";
 
-const MetodologiaAvaliacaoSection = () => {
+const MethodologySection = () => {
   return (
     <section className="py-20 bg-muted/30" id="metodologia-avaliacao">
       <div className="container px-4">
@@ -171,4 +171,4 @@ const MetodologiaAvaliacaoSection = () => {
   );
 };
 
-export default MetodologiaAvaliacaoSection;
+export default MethodologySection;
