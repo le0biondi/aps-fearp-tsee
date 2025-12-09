@@ -82,7 +82,7 @@ const MetodologiaAvaliacaoSection = () => {
                 <p className="text-muted-foreground leading-relaxed">
                   O efeito causal médio (ATESR) é a diferença entre o limite da expectativa condicional do resultado (Y) à direita do corte e à esquerda do corte:
                   <code className="block mt-2 p-2 bg-muted rounded-md text-sm">
-                    $ATESR = \lim_{x \downarrow x_0} E(Y|X=x) - \lim_{x \uparrow x_0} E(Y|X=x)$
+                    {`$ATESR = \lim_{x \downarrow x_0} E(Y|X=x) - \lim_{x \uparrow x_0} E(Y|X=x)$`}
                   </code>
                 </p>
               </CardContent>
@@ -106,7 +106,7 @@ const MetodologiaAvaliacaoSection = () => {
                   para o desconto e outras que não deveriam, mas podem recebê-lo (em menor escala, devido à melhor focalização). 
                   O efeito causal médio (ATEFRD) é obtido pelo "estimador de Wald", que corrige o cumprimento imperfeito:
                   <code className="block mt-2 p-2 bg-muted rounded-md text-sm">
-                    $ATEFRD = \frac{\lim_{x \downarrow x_0} E(Y|X=x) - \lim_{x \uparrow x_0} E(Y|X=x)}{\lim_{x \downarrow x_0} P(D=1|X=x) - \lim_{x \uparrow x_0} P(D=1|X=x)}$
+                    {`$ATEFRD = \frac{\lim_{x \downarrow x_0} E(Y|X=x) - \lim_{x \uparrow x_0} E(Y|X=x)}{\lim_{x \downarrow x_0} P(D=1|X=x) - \lim_{x \uparrow x_0} P(D=1|X=x)}$`}
                   </code>
                   Este estimador identifica o <strong className="text-foreground">Efeito Médio de Tratamento Local (LATE)</strong> para o grupo de "compliers" (aqueles que são induzidos a receber o tratamento pela regra de corte).
                 </p>
