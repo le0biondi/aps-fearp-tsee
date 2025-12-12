@@ -90,7 +90,7 @@ const Hero = () => {
             
             <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105">
               <Lightbulb className="w-8 h-8 text-warning mb-3 mx-auto" />
-              <div className="text-4xl font-bold text-white mb-2">R\$ 125</div>
+              <div className="text-4xl font-bold text-white mb-2">R$ 125</div>
               <div className="text-white/80">Economia Mensal Média</div>
             </div>
           </div>
