@@ -30,10 +30,10 @@ const MethodologySection = () => {
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-muted-foreground leading-relaxed">
-                O <strong className="text-foreground">Regression Discontinuity Design (RDD)</strong>, ou Regressão com Descontinuidade, é uma metodologia de avaliação de impacto quase-experimental 
+                O Regression Discontinuity Design (RDD), ou Regressão com Descontinuidade, é uma metodologia de avaliação de impacto quase-experimental 
                 utilizada quando a elegibilidade a um tratamento (como um programa social) é determinada por uma regra de corte precisa. 
                 Nesse desenho, indivíduos (ou famílias) são alocados ao tratamento ou ao controle com base no cumprimento de um 
-                limiar em uma <strong className="text-foreground">variável de atribuição (running variable)</strong>.
+                limiar em uma variável de atribuição (running variable).
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 A ideia central é que unidades (famílias, no caso da TSEE) com escores ligeiramente acima e ligeiramente abaixo desse ponto de corte são muito 
@@ -54,8 +54,8 @@ const MethodologySection = () => {
             <CardContent className="space-y-4">
               <p className="text-muted-foreground leading-relaxed">
                 A TSEE é um exemplo clássico onde o RDD se mostra particularmente adequado. A elegibilidade ao benefício da TSEE é definida por critérios claros, 
-                principalmente a <strong className="text-foreground">renda familiar mensal per capita</strong> (para CadÚnico) ou o <strong className="text-foreground">recebimento do BPC</strong>, que atuam como variáveis de atribuição. 
-                Os <strong className="text-foreground">pontos de corte</strong> (por exemplo, meio salário mínimo ou três salários mínimos) criam uma descontinuidade na probabilidade de receber o desconto na fatura de energia.
+                principalmente a renda familiar mensal per capita (para CadÚnico) ou o recebimento do BPC, que atuam como variáveis de atribuição. 
+                Os pontos de corte (por exemplo, meio salário mínimo ou três salários mínimos) criam uma descontinuidade na probabilidade de receber o desconto na fatura de energia.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Portanto, podemos comparar famílias cuja renda está logo abaixo do limite de elegibilidade (beneficiárias) com aquelas cuja renda está logo acima (não beneficiárias) 
@@ -75,7 +75,7 @@ const MethodologySection = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground leading-relaxed">
-                  No <strong className="text-foreground">RDD Sharp</strong>, a relação entre a variável de atribuição (X) e o tratamento (D) é determinística: 
+                  No RDD Sharp, a relação entre a variável de atribuição (X) e o tratamento (D) é determinística: 
                   todas as unidades com escore ≥ X₀ recebem o tratamento, e todas com escore &lt; X₀ não recebem. 
                   A participação é mandatória e o cumprimento é perfeito. A probabilidade de tratamento muda de 0 para 1 no ponto de corte.
                 </p>
@@ -97,8 +97,8 @@ const MethodologySection = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground leading-relaxed">
-                  O <strong className="text-foreground">RDD Fuzzy</strong> ocorre quando a relação entre a variável de atribuição (X) e o tratamento (D) é estocástica, 
-                  ou seja, há <strong className="text-warning">cumprimento imperfeito (non-compliance)</strong>. Isso significa que nem todos os elegíveis recebem o benefício, 
+                  O RDD Fuzzy ocorre quando a relação entre a variável de atribuição (X) e o tratamento (D) é estocástica, 
+                  ou seja, há cumprimento imperfeito (non-compliance). Isso significa que nem todos os elegíveis recebem o benefício, 
                   e alguns não elegíveis podem recebê-lo. A probabilidade de tratamento muda, mas não de 0 para 1.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
@@ -110,7 +110,7 @@ const MethodologySection = () => {
                   ATE<sub>FRD</sub> = [lim(x→x₀⁺) E(Y|X=x) - lim(x→x₀⁻) E(Y|X=x)] / [lim(x→x₀⁺) P(D=1|X=x) - lim(x→x₀⁻) P(D=1|X=x)]
                 </code>
                 <p className="text-muted-foreground leading-relaxed text-sm">
-                  Este estimador identifica o <strong className="text-foreground">Efeito Médio de Tratamento Local (LATE)</strong> para o grupo de "compliers" (aqueles que são induzidos a receber o tratamento pela regra de corte).
+                  Este estimador identifica o Efeito Médio de Tratamento Local (LATE) para o grupo de "compliers" (aqueles que são induzidos a receber o tratamento pela regra de corte).
                 </p>
               </CardContent>
             </Card>
@@ -126,10 +126,10 @@ const MethodologySection = () => {
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-muted-foreground leading-relaxed">
-                A validade do RDD depende de premissas cruciais. A mais importante é a <strong className="text-foreground">continuidade das funções de regressão dos produtos potenciais médios (E(Y₀|X) e E(Y₁|X))</strong> ao redor do ponto de corte. Isso implica que não há outras descontinuidades na variável de resultado ou em outras características importantes das famílias exatamente no ponto de corte que não sejam o tratamento da TSEE.
+                A validade do RDD depende de premissas cruciais. A mais importante é a continuidade das funções de regressão dos produtos potenciais médios (E(Y₀|X) e E(Y₁|X)) ao redor do ponto de corte. Isso implica que não há outras descontinuidades na variável de resultado ou em outras características importantes das famílias exatamente no ponto de corte que não sejam o tratamento da TSEE.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Para testar a plausibilidade dessas premissas, são realizados <strong className="text-foreground">testes de falsificação</strong>, tais como:
+                Para testar a plausibilidade dessas premissas, são realizados testes de falsificação, tais como:
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-2 pl-4">
                 <li>
@@ -161,7 +161,7 @@ const MethodologySection = () => {
                 A estimação do RDD envolve a utilização de modelos de regressão local, onde uma função polinomial é ajustada à relação entre a variável de atribuição e o resultado de interesse, separadamente para cada lado do ponto de corte, dentro de uma "janela" (bandwidth) específica. A escolha da largura dessa janela e da ordem do polinômio é crucial e geralmente orientada por métodos data-driven que buscam otimizar o trade-off entre viés e variância.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                O RDD fornece uma estimativa do <strong className="text-foreground">Efeito Médio de Tratamento Local (LATE)</strong>, que é o impacto causal do programa para as famílias "próximas" ao ponto de corte. Essa estimativa possui alta validade interna, sendo um dos métodos mais robustos para inferência causal em ambientes não experimentais. No entanto, sua validade externa é limitada, pois os resultados são diretamente aplicáveis apenas à subpopulação no entorno do limiar de elegibilidade.
+                O RDD fornece uma estimativa do Efeito Médio de Tratamento Local (LATE), que é o impacto causal do programa para as famílias "próximas" ao ponto de corte. Essa estimativa possui alta validade interna, sendo um dos métodos mais robustos para inferência causal em ambientes não experimentais. No entanto, sua validade externa é limitada, pois os resultados são diretamente aplicáveis apenas à subpopulação no entorno do limiar de elegibilidade.
               </p>
             </CardContent>
           </Card>
