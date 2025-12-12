@@ -1,6 +1,6 @@
 import { Zap, TrendingDown, Lightbulb } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
+import heroVideo from "@/assets/Mudanzas Maven.mp4";
 const Hero = () => {
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-primary">
@@ -23,9 +23,16 @@ const Hero = () => {
             </span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Análise econométrica rigorosa do impacto da política de subsídio energético para famílias de baixa renda no Brasil
-          </p>
+          <div className="mb-12 max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl border border-white/20">
+            <video 
+              src={heroVideo} 
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+              className="w-full h-auto"
+            />
+          </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
