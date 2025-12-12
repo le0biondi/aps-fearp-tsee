@@ -1,6 +1,7 @@
 import { Zap, TrendingDown, Lightbulb } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroVideo from "@/assets/Mudanzas Maven.mp4";
+// import heroVideo from "@/assets/Mudanzas Maven.mp4"; // Não será mais necessário se o vídeo for removido
+
 const Hero = () => {
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-primary">
@@ -23,15 +24,19 @@ const Hero = () => {
             </span>
           </h1>
 
+          {/* Iframe do Canva substituindo o vídeo */}
           <div className="mb-12 max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl border border-white/20">
-            <video 
-              src={heroVideo} 
-              autoPlay 
-              loop 
-              muted 
-              playsInline
-              className="w-full h-auto"
-            />
+            <div style={{ position: 'relative', width: '100%', height: 0, paddingTop: '56.2500%', paddingBottom: 0, boxShadow: '0 2px 8px 0 rgba(63,69,81,0.16)', marginTop: '0', marginBottom: '0', overflow: 'hidden', borderRadius: '8px', willChange: 'transform' }}>
+              <iframe 
+                loading="lazy" 
+                style={{ position: 'absolute', width: '100%', height: '100%', top: 0, left: 0, border: 'none', padding: 0, margin: 0 }}
+                src="https://www.canva.com/design/DAG7I_4XQHg/Aj1fD1RaATKp7pJq1Y7_ig/view?embed" 
+                allowFullScreen={true} // Usar camelCase para allowfullscreen em JSX
+                allow="fullscreen"
+              >
+              </iframe>
+            </div>
+            {/* O link de atribuição "Mudanzas Maven de Cecilia vieira" foi removido pois geralmente não é desejado dentro do componente principal */}
           </div>
 
           {/* CTA Buttons */}
@@ -54,7 +59,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               variant="outline" 
-              onClick={() => document.getElementById('abrangencia')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => document.getElementById('abrangencia')?.scrollUponView({ behavior: 'smooth' })}
               className="bg-transparent border-2 border-white text-white hover:bg-white/10 backdrop-blur-sm"
             >
               Abrangência
@@ -85,7 +90,7 @@ const Hero = () => {
             
             <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105">
               <Lightbulb className="w-8 h-8 text-warning mb-3 mx-auto" />
-              <div className="text-4xl font-bold text-white mb-2">R$ 125</div>
+              <div className="text-4xl font-bold text-white mb-2">R\$ 125</div>
               <div className="text-white/80">Economia Mensal Média</div>
             </div>
           </div>
